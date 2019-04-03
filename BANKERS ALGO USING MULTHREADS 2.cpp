@@ -3,7 +3,6 @@
 #include<pthread.h>
 #include<semaphore.h>     
  int i,j,m,n;   
-void *f1(void *a);
 int main()
 {
 do{
@@ -110,26 +109,5 @@ for(i=0;i<m;i++)
 
 	printf("\t");
 }
-}
 
-/*int main()
-{
-int q;
-pthread_t p[10];
-res_allocation();
-display();
-}*/
-//printf("enter no of threads requeired :");
-//scanf("%d",&q);
-/*for(i=0;i<q;i++)
-{
-pthread_create(&p[i],NULL,f1,(void *)i);
-
-}
-
-for(i=0;i<q;i++)
-{
-pthread_join(p[i],NULL);
-}
-}*/
 
